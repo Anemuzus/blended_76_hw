@@ -23,7 +23,7 @@
   body{
     font-family: 'Poppins',
         sans-serif;
-
+    color: #000000;
     margin: 0;
 }
   
@@ -34,6 +34,7 @@
 }
 a{text-decoration: none;}
 
+
 h1,h2,h3,p{margin: 0;}
 
 
@@ -42,6 +43,8 @@ h1,h2,h3,p{margin: 0;}
 .container{
     margin: 0 auto;
     max-width: 1338px;
+    padding-right: 15px;
+    padding-left: 15px;
     border: 1px solid tomato;
 }
 /* -------------------------------HEADER--------------------------------- */
@@ -140,10 +143,60 @@ margin-bottom: 40px;}
         letter-spacing: 0.03em;
         color: aliceblue;
         background-color: #263238;
+        min-width: 426px;
             border-radius: 10px;
-            padding: 25px 110px;
+            padding: 23px 64px;
 }
 
 
 .exp{width: 386px;
 height: 240px;}
+
+/*_______________________________SKILS_________________________ */
+
+.skills{padding: 180px 0px;}
+
+.h2-title{
+    font-weight: 600;
+        font-size: 48px;
+        line-height: 72px;
+        text-align: center;
+        margin-bottom: 60px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.skills-item-speaking{
+    grid-area: 1 / 1 / 4 / 2;
+    background: #F5F5F5;
+        border-radius: 10px;
+    
+}
+
+.skills-item-writing {
+    grid-area: 3 / 2 / 4 / 4;
+    background: #F5F5F5;
+        border-radius: 10px;
+}
+
+.skills-item-reading {
+    grid-area: 1 / 2 / 3 / 3;
+    background: #F5F5F5;
+        border-radius: 10px;
+}
+
+.skills-item-learn {
+    grid-area: 1 / 3 / 3 / 4;
+    background: #F5F5F5;
+        border-radius: 10px;
+}
+.skills-text{
+    font-size: 16px;
+    line-height: 24px;
+color: var(--minor-color);}
