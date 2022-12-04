@@ -1,7 +1,8 @@
   :root{
     
 --body-color:#263828
-;
+
+
 
 
 
@@ -18,7 +19,11 @@
     
   }
   
-  body{margin: 0;
+  body{
+    font-family: 'Poppins',
+        sans-serif;
+
+    margin: 0;
 }
   
   ul{
@@ -28,12 +33,15 @@
 }
 a{text-decoration: none;}
 
+h1,h2,h3,p{margin: 0;}
+
 
 
 
 .container{
     margin: 0 auto;
     max-width: 1338px;
+    border: 1px solid tomato;
 }
 /* -------------------------------HEADER--------------------------------- */
 .header{
@@ -56,7 +64,7 @@ font-size: 36px;
 .header-list{
     display: flex;
     align-items: center;
-    border: 1px solid tomato;}
+    }
 
 .header-list-nav{
     display: flex;
@@ -93,3 +101,35 @@ font-size: 36px;
     background-color:#dad8d8;
 border:2px solid #dad8d8;
 }
+
+/* _______________HERO______________________ */
+
+.hero{
+    display: flex;
+      justify-content: space-between;
+
+}
+
+.hero-box{max-width: 540px;}
+
+.h1{font-weight: 600;
+    font-size: 64px;
+    line-height: calc(80/64);}
+
+    .lamp{}
+
+
+.h1-lamp{display: flex;}
+
+
+
+.hero-text{
+    font-size: 24px;
+        line-height: 36px;
+    
+        color: #8F95A5;
+}
+
+.hero-btn{}
+
+
